@@ -1,0 +1,37 @@
+html {
+    height: 715px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 99%;
+    height: 100%;
+    background-image: url(animan.gif);
+    background-repeat: repeat;
+}
+
+h1 {
+    font-size: 100px;
+    animation: animation 1s linear infinite;
+    color: #f75211;
+}
+
+.content {
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 200px;
+    animation : animation 2s linear infinite;
+}
+
+@keyframes animation {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
